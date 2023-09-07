@@ -228,14 +228,12 @@ name = "tracing-orchestra"
 version = "0.1.1"
 dependencies = [
  "tracing",
- "tracing-orchestra-macros 0.1.0",
+ "tracing-orchestra-macros 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "tracing-orchestra-macros"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "120220a3d869a9ca7ad9b67ccd90314e58ffd8858473068beab2f64ee1439d92"
+version = "0.1.1"
 dependencies = [
  "quote",
  "syn",
@@ -246,6 +244,8 @@ dependencies = [
 [[package]]
 name = "tracing-orchestra-macros"
 version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d8fa635a105ffb6ca9d8746cb7c79da09b11b972f6be6df512829eb00ccd517e"
 dependencies = [
  "quote",
  "syn",
