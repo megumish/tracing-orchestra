@@ -10,7 +10,7 @@ homepage = { workspace = true }
 include = { workspace = true }
 keywords = { workspace = true }
 license = { workspace = true }
-publish = { workspace = true }
+publish = true
 readme = { workspace = true }
 repository = { workspace = true }
 rust-version = { workspace = true }
@@ -19,5 +19,5 @@ version = { workspace = true }
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-macros = { workspace = true }
+tracing-orchestra-macros = { workspace = true }
 tracing = { workspace = true }

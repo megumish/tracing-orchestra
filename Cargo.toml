@@ -4,11 +4,11 @@ resolver = "2"
 [workspace.package]
 authors = ["megumsih <megumish@megumi.sh>"]
 categories = ["tracing", "logging", "async", "metrics"]
-description = "Library of blaizing fast QUIC protocol"
-documentation = ""
+description = "Give me more instruments!"
+documentation = "https://github.com/megumish/tracing-orchestra/README.md"
 edition = "2021"
 exclude = []
-homepage = "https://github.com/megumish/tracing-orchestra/README.md"
+homepage = "https://github.com/megumish/tracing-orchestra"
 include = []
 keywords = ["tracing", "logging", "async", "metrics"]
 license = "MIT"
@@ -19,7 +19,7 @@ rust-version = "1.72"
 version = "0.1.0"
 
 [workspace.dependencies]
-macros = { path = "macros" }
+tracing-orchestra-macros = { path = "macros" }
 tracing-orchestra = { path = "tracing-orchestra" }
 tracing = "0.1.37"
 tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
