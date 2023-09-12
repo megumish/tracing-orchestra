@@ -16,9 +16,12 @@ tracing-orchestra = "0.1"
 ```rust
 use tracing_orchestra::orchestra;
 
-#[orchestra]
+// default instrument value is here!
+#[orchestra::(level = "trace")]
 impl Foo {
     fn bar() {}
+    // override tracing::instrument
+    #[tracing::instrument(level = "info")]
     fn baz() {}
 }
 ```
