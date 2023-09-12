@@ -19,7 +19,7 @@ rust-version = "1.72"
 version = "0.2.0"
 
 [workspace.dependencies]
-tracing-orchestra-macros = "0.1.1"
+tracing-orchestra-macros = "0.2.0"
 tracing-orchestra = { path = "tracing-orchestra" }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
