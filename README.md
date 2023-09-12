@@ -8,7 +8,7 @@ Have you ever found it tedious to attach `#[tracing::instrument]` to each functi
 
 ```toml
 [dependencies]
-tracing-orchestra = "0.1"
+tracing-orchestra = "0.2"
 ```
 
 ## How to use
