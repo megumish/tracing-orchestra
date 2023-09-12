@@ -1,5 +1,8 @@
+use tracing_orchestra_development as tracing_orchestra;
+use tracing_orchestra_macros_development as tracing_orchestra_macros;
+
 use tracing::{info, span};
-use tracing_orchestra::{orchestra, Orchestra};
+use tracing_orchestra_macros::{orchestra, Orchestra};
 use tracing_subscriber::fmt::format::FmtSpan;
 
 #[derive(Orchestra, Debug)]

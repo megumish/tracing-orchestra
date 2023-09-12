@@ -23,6 +23,7 @@ version = "0.2.0"
 dependencies = [
  "tracing",
  "tracing-orchestra",
+ "tracing-orchestra-macros 0.2.0",
  "tracing-subscriber",
 ]
 
@@ -228,7 +229,6 @@ name = "tracing-orchestra"
 version = "0.2.0"
 dependencies = [
  "tracing",
- "tracing-orchestra-macros 0.2.0",
  "tracing-orchestra-macros 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 

@@ -23,3 +23,11 @@ tracing-orchestra-macros = "0.2.0"
 tracing-orchestra = { path = "tracing-orchestra" }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[workspace.dependencies.'tracing-orchestra-development']
+package = "tracing-orchestra"
+path = "tracing-orchestra"
+
+[workspace.dependencies.'tracing-orchestra-macros-development']
+package = "tracing-orchestra-macros"
+path = "macros"

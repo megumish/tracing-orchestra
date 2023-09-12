@@ -28,6 +28,5 @@ path = "pass-directly.rs"
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
 # refer to local crates for development
-tracing-orchestra = { package = "tracing-orchestra", path = "../tracing-orchestra", features = [
-    "development",
-] }
+tracing-orchestra-development = { workspace = true }
+tracing-orchestra-macros-development = { workspace = true }

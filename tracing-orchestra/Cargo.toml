@@ -18,12 +18,6 @@ version = { workspace = true }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[features]
-default = []
-development = ["tracing-orchestra-macros-development"]
-
 [dependencies]
 tracing-orchestra-macros = { workspace = true }
 tracing = { workspace = true }
-# refer to local path package for development
-tracing-orchestra-macros-development = { package = "tracing-orchestra-macros", path = "../macros", optional = true }
