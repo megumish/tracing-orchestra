@@ -26,9 +26,9 @@ impl Foo {
 ## Features
 
 - [x] Batch assignment of `#[tracing::instrument]` to functions.
-- [ ] Set default values for `#[tracing::instrument]`.
+- [x] Set default values for `#[tracing::instrument]`.
   - [x] Set default values for `#[tracing::instrument]`.
-  - [ ] Set values to override for `#[tracing::instrument]`.
+  - [x] Set values to override for `#[tracing::instrument]`.
 - [ ] Automatic implementation of Debug and Display
   - [ ] Setup using the standard Derive macro for Debug and Display.
   - [ ] Configuration when you want to hide some values during tracing (e.g., sensitive information such as access tokens)

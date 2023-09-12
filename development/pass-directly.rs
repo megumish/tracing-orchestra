@@ -10,10 +10,14 @@ struct Cat {
 
 #[orchestra(level = "warn", fields(extra = "neko"))]
 impl Cat {
-    fn new(name: String, age: u128) -> Self {
+    pub fn new(name: String, age: u128) -> Self {
         Self { name, age }
     }
 
+    // override tracing::instrument
+    #[tracing::instrument(level = "error", fields(very_extra = "inu"))]
+    // double override
+    #[tracing::instrument(level = "warn", fields(very_extra = "nyan"))]
     fn meow(&self) -> String {
         let name = &self.name;
         let age = &self.age;
