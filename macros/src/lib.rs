@@ -19,8 +19,9 @@ pub fn derive_orchestra(tokens: TokenStream) -> TokenStream {
 }
 
 #[proc_macro_attribute]
-pub fn orchestra(_: TokenStream, implementation: TokenStream) -> TokenStream {
+pub fn orchestra(attrs: TokenStream, implementation: TokenStream) -> TokenStream {
     let implementation_ast = syn::parse_macro_input!(implementation as syn::ItemImpl);
+    let attrs: proc_macro2::TokenStream = attrs.into();
     let impl_attrs = implementation_ast.attrs;
     let impl_defaultness = implementation_ast.defaultness;
     let impl_unsafety = implementation_ast.unsafety;
@@ -64,7 +65,7 @@ pub fn orchestra(_: TokenStream, implementation: TokenStream) -> TokenStream {
     let ret = quote!(
         #(#impl_attrs)*
         #impl_defaultness #impl_unsafety impl #impl_generics #impl_trait #impl_type {
-            #[tracing::instrument]
+            #[tracing::instrument(#attrs)]
             #(#impl_items)*
         }
     );

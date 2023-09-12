@@ -22,7 +22,8 @@ version = { workspace = true }
 proc-macro = true
 
 [dependencies]
-quote = "1.0.33"
-syn = { version = "2.0.31", features = ["full"] }
+quote = "1.0"
+syn = { version = "2.0", features = ["full"] }
+proc-macro2 = { version = "1.0" }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
