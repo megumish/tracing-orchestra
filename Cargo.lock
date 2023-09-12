@@ -19,11 +19,11 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "development"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "tracing",
  "tracing-orchestra",
- "tracing-orchestra-macros 0.2.0",
+ "tracing-orchestra-macros 0.2.1",
  "tracing-subscriber",
 ]
 
@@ -226,15 +226,17 @@ dependencies = [
 
 [[package]]
 name = "tracing-orchestra"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "tracing",
- "tracing-orchestra-macros 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tracing-orchestra-macros 0.2.0",
 ]
 
 [[package]]
 name = "tracing-orchestra-macros"
 version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "88753108cf2b8582dafe26fa2f57bf4e3f3f41fc8b05ccaa325b7dbb59588309"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -245,9 +247,7 @@ dependencies = [
 
 [[package]]
 name = "tracing-orchestra-macros"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "88753108cf2b8582dafe26fa2f57bf4e3f3f41fc8b05ccaa325b7dbb59588309"
+version = "0.2.1"
 dependencies = [
  "proc-macro2",
  "quote",
